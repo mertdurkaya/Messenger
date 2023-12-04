@@ -13,6 +13,9 @@
 		4EBFFC1A2B1E7B86005DA141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBFFC192B1E7B86005DA141 /* Preview Assets.xcassets */; };
 		4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC282B1E7C06005DA141 /* LoginView.swift */; };
 		4EBFFC2B2B1E8D31005DA141 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC2A2B1E8D31005DA141 /* SignupView.swift */; };
+		4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC2D2B1E8FE9005DA141 /* InboxView.swift */; };
+		4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */; };
+		4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		4EBFFC192B1E7B86005DA141 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EBFFC282B1E7C06005DA141 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4EBFFC2A2B1E8D31005DA141 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		4EBFFC2D2B1E8FE9005DA141 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,9 @@
 		4EBFFC212B1E7BA5005DA141 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4EBFFC2F2B1E9131005DA141 /* ActiveNow */,
 				4EBFFC252B1E7BDF005DA141 /* Auth */,
+				4EBFFC2C2B1E8FCF005DA141 /* Inbox */,
 				4EBFFC262B1E7BE9005DA141 /* Root */,
 			);
 			path = Core;
@@ -135,6 +143,23 @@
 				4EBFFC2A2B1E8D31005DA141 /* SignupView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4EBFFC2C2B1E8FCF005DA141 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC2D2B1E8FE9005DA141 /* InboxView.swift */,
+				4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		4EBFFC2F2B1E9131005DA141 /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */,
 				4EBFFC2B2B1E8D31005DA141 /* SignupView.swift in Sources */,
 				4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */,
+				4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */,
+				4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */,
 				4EBFFC152B1E7B83005DA141 /* ContentView.swift in Sources */,
 				4EBFFC132B1E7B83005DA141 /* MessengerApp.swift in Sources */,
 			);
