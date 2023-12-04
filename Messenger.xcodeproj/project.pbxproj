@@ -17,6 +17,8 @@
 		4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */; };
 		4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */; };
 		4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC352B1E9690005DA141 /* NewMessageView.swift */; };
+		4EBFFC3B2B1E9A48005DA141 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3A2B1E9A48005DA141 /* ProfileView.swift */; };
+		4EBFFC3D2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		4EBFFC352B1E9690005DA141 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		4EBFFC3A2B1E9A48005DA141 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				4EBFFC252B1E7BDF005DA141 /* Auth */,
 				4EBFFC2C2B1E8FCF005DA141 /* Inbox */,
 				4EBFFC342B1E9665005DA141 /* NewMessage */,
+				4EBFFC372B1E9A03005DA141 /* Profile */,
 				4EBFFC262B1E7BE9005DA141 /* Root */,
 			);
 			path = Core;
@@ -173,6 +178,31 @@
 			path = NewMessage;
 			sourceTree = "<group>";
 		};
+		4EBFFC372B1E9A03005DA141 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC392B1E9A40005DA141 /* View */,
+				4EBFFC382B1E9A3A005DA141 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4EBFFC382B1E9A3A005DA141 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EBFFC392B1E9A40005DA141 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC3A2B1E9A48005DA141 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,12 +274,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */,
+				4EBFFC3B2B1E9A48005DA141 /* ProfileView.swift in Sources */,
 				4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */,
 				4EBFFC2B2B1E8D31005DA141 /* SignupView.swift in Sources */,
 				4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */,
 				4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */,
 				4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */,
 				4EBFFC152B1E7B83005DA141 /* ContentView.swift in Sources */,
+				4EBFFC3D2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift in Sources */,
 				4EBFFC132B1E7B83005DA141 /* MessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
