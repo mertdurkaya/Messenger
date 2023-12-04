@@ -16,6 +16,7 @@
 		4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC2D2B1E8FE9005DA141 /* InboxView.swift */; };
 		4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */; };
 		4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */; };
+		4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC352B1E9690005DA141 /* NewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4EBFFC2D2B1E8FE9005DA141 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		4EBFFC322B1E92CA005DA141 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		4EBFFC352B1E9690005DA141 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				4EBFFC2F2B1E9131005DA141 /* ActiveNow */,
 				4EBFFC252B1E7BDF005DA141 /* Auth */,
 				4EBFFC2C2B1E8FCF005DA141 /* Inbox */,
+				4EBFFC342B1E9665005DA141 /* NewMessage */,
 				4EBFFC262B1E7BE9005DA141 /* Root */,
 			);
 			path = Core;
@@ -160,6 +163,14 @@
 				4EBFFC302B1E9143005DA141 /* ActiveNowView.swift */,
 			);
 			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		4EBFFC342B1E9665005DA141 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC352B1E9690005DA141 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EBFFC332B1E92CA005DA141 /* InboxRowView.swift in Sources */,
+				4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */,
 				4EBFFC2B2B1E8D31005DA141 /* SignupView.swift in Sources */,
 				4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */,
 				4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */,
