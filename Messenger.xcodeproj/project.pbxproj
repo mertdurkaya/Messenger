@@ -21,6 +21,7 @@
 		4EBFFC3D2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */; };
 		4EBFFC3F2B1F3C60005DA141 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3E2B1F3C60005DA141 /* ProfileViewModel.swift */; };
 		4EBFFC412B1F46A5005DA141 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC402B1F46A5005DA141 /* User.swift */; };
+		4EBFFC452B1F7538005DA141 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC442B1F7538005DA141 /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		4EBFFC3E2B1F3C60005DA141 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4EBFFC402B1F46A5005DA141 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4EBFFC442B1F7538005DA141 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				4EBFFC2F2B1E9131005DA141 /* ActiveNow */,
 				4EBFFC252B1E7BDF005DA141 /* Auth */,
+				4EBFFC432B1F74DF005DA141 /* Components */,
 				4EBFFC2C2B1E8FCF005DA141 /* Inbox */,
 				4EBFFC342B1E9665005DA141 /* NewMessage */,
 				4EBFFC372B1E9A03005DA141 /* Profile */,
@@ -209,6 +212,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4EBFFC432B1F74DF005DA141 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EBFFC442B1F7538005DA141 /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +295,7 @@
 				4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */,
 				4EBFFC2B2B1E8D31005DA141 /* SignupView.swift in Sources */,
 				4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */,
+				4EBFFC452B1F7538005DA141 /* CircularProfileImageView.swift in Sources */,
 				4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */,
 				4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */,
 				4EBFFC3F2B1F3C60005DA141 /* ProfileViewModel.swift in Sources */,
