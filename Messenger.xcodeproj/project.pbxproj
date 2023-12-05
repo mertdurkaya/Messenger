@@ -19,6 +19,7 @@
 		4EBFFC362B1E9690005DA141 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC352B1E9690005DA141 /* NewMessageView.swift */; };
 		4EBFFC3B2B1E9A48005DA141 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3A2B1E9A48005DA141 /* ProfileView.swift */; };
 		4EBFFC3D2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */; };
+		4EBFFC3F2B1F3C60005DA141 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBFFC3E2B1F3C60005DA141 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4EBFFC352B1E9690005DA141 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		4EBFFC3A2B1E9A48005DA141 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		4EBFFC3E2B1F3C60005DA141 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				4EBFFC3C2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift */,
+				4EBFFC3E2B1F3C60005DA141 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				4EBFFC292B1E7C06005DA141 /* LoginView.swift in Sources */,
 				4EBFFC2E2B1E8FE9005DA141 /* InboxView.swift in Sources */,
 				4EBFFC312B1E9143005DA141 /* ActiveNowView.swift in Sources */,
+				4EBFFC3F2B1F3C60005DA141 /* ProfileViewModel.swift in Sources */,
 				4EBFFC152B1E7B83005DA141 /* ContentView.swift in Sources */,
 				4EBFFC3D2B1E9B9A005DA141 /* SettingsOptionsViewModel.swift in Sources */,
 				4EBFFC132B1E7B83005DA141 /* MessengerApp.swift in Sources */,
