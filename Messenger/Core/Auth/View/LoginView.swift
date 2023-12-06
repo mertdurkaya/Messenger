@@ -15,15 +15,11 @@ struct LoginView: View {
         NavigationStack {
             VStack {
                 Spacer()
-                // logo image
-                
                 Image("messenger")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
                     .padding()
-                
-                // text fields
                 
                 VStack(spacing: 12) {
                     TextField("Enter your email", text: $email)
@@ -40,8 +36,6 @@ struct LoginView: View {
                         .clipShape(.rect(cornerRadius: 10))
                         .padding(.horizontal, 24)
                 }
-                
-                // password
             
                 Button {
                     print("Forgot password tapped")
@@ -53,8 +47,6 @@ struct LoginView: View {
                         .padding(.trailing, 28)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
-                
-                // login
                 
                 Button {
                     print("login tapped")
@@ -93,8 +85,6 @@ struct LoginView: View {
                 .padding()
                 
                 Spacer()
-                
-                // sign up link
                 
                 Divider()
                 

@@ -17,7 +17,6 @@ enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     
     var title: String {
         switch self {
-            
         case .darkMode: return "Dark mode"
         case .activeStatus: return "Active Status"
         case .accessibility: return "Accessibility"
@@ -28,7 +27,6 @@ enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     
     var imageName: String {
         switch self {
-            
         case .darkMode: return "moon.circle.fill"
         case .activeStatus: return "message.badge.circle.fill"
         case .accessibility: return "person.circle.fill"
@@ -39,17 +37,11 @@ enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     
     var imageBackgroundColor: Color {
         switch self {
-            
-        case .darkMode:
-            return .black
-        case .activeStatus:
-            return .green
-        case .accessibility:
-            return .black
-        case .privacy:
-            return .blue
-        case .notification:
-            return .purple
+        case .darkMode: return .yellow
+        case .activeStatus: return .green
+        case .accessibility: return .red
+        case .privacy: return .blue
+        case .notification: return .purple
         }
     }
     

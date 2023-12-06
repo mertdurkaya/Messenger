@@ -16,15 +16,11 @@ struct SignupView: View {
     var body: some View {
         VStack {
             Spacer()
-            // logo image
-            
             Image("messenger")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 150, height: 150)
                 .padding()
-            
-            // text fields
             
             VStack(spacing: 12) {
                 TextField("Enter your email", text: $email)
@@ -63,9 +59,7 @@ struct SignupView: View {
             .padding(.vertical)
             
             Spacer()
-            
             Divider()
-            
             Button {
                 dismiss()
             } label: {

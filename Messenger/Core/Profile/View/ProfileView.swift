@@ -14,8 +14,6 @@ struct ProfileView: View {
     
     var body: some View {
         VStack {
-            
-            // header
             VStack {
                 PhotosPicker(selection: $viewModel.selectedItem) {
                     if let profileImage = viewModel.profileImage {
@@ -28,19 +26,12 @@ struct ProfileView: View {
                         CircularProfileImageView(user: user, size: .xLarge)
                     }
                 }
-                Button("Reset Photo") {
-                    viewModel.profileImage = nil
-                }
-                .font(.footnote)
-                .padding(.bottom)
-                
                 
                 Text(user.fullname)
                     .font(.title)
                     .fontWeight(.semibold)
             }
             
-            //list
             List {
                 Section {
                     ForEach(SettingsOptionsViewModel.allCases) { option in
