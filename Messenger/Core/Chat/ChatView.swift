@@ -9,30 +9,27 @@ import SwiftUI
 
 struct ChatView: View {
     @State private var messageText = ""
+    let user: User
     
     var body: some View {
         VStack {
-            ScrollView {
-                VStack {
-                    CircularProfileImageView(user: User.MOCK_USER, size: .xLarge)
+            VStack {
+                CircularProfileImageView(user: user, size: .xLarge)
+                VStack(spacing: 4) {
+                    Text(user.fullname)
+                        .font(.title3)
+                        .fontWeight(.semibold)
                     
-                    VStack(spacing: 4) {
-                        Text("Bruce Wayne")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                        
-                        Text("Messenger")
-                            .font(.footnote)
-                            .foregroundStyle(.gray)
-                    }
-                    
-                    
+                    Text("Messenger")
+                        .font(.footnote)
+                        .foregroundStyle(.gray)
                 }
-
+            }
+            
+            ScrollView {
                 ForEach(0 ... 15, id: \.self) { message in
                     ChatMessageCell(isFromCurrentUser: Bool.random())
                 }
-                
             }
             
             Spacer()
@@ -58,5 +55,5 @@ struct ChatView: View {
 }
 
 #Preview {
-    ChatView()
+    ChatView(user: User.MOCK_USER)
 }

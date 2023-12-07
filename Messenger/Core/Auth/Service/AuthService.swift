@@ -18,7 +18,6 @@ class AuthService {
     init() {
         self.userSession = Auth.auth().currentUser
         loadCurrentUserData()
-        print("DEBUG: User session id: \(String(describing: userSession?.uid))")
     }
     
     @MainActor
@@ -27,7 +26,6 @@ class AuthService {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
             loadCurrentUserData()
-            print("DEBUG: Logged in user \(result.user.uid)")
         } catch {
             print("DEBUG: Failed to log in with error: \(error.localizedDescription)")
         }
@@ -40,7 +38,6 @@ class AuthService {
             self.userSession = result.user
             try await self.uploadUserData(email: email, fullname: fullname, id: result.user.uid)
             loadCurrentUserData()
-            print("DEBUG: Created user \(result.user.uid)")
         } catch {
             print("DEBUG: Failed to create the user with error: \(error.localizedDescription)")
         }
