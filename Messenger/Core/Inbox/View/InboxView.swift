@@ -29,9 +29,7 @@ struct InboxView: View {
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
             .onChange(of: selectedUser) { oldValue, newValue in
-                showChat = newValue != oldValue
-                print("This is old value: \(String(describing: oldValue))")
-                print("This is new value: \(String(describing: newValue))")
+                showChat = newValue != nil
             }
             .navigationDestination(for: User.self, destination: { user in
                 ProfileView(user: user)
@@ -62,6 +60,8 @@ struct InboxView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         showMessageView.toggle()
+                        selectedUser = nil
+                        
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
