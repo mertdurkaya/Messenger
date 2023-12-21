@@ -21,26 +21,25 @@ struct ChatView: View {
             ScrollView {
                 VStack {
                     CircularProfileImageView(user: user, size: .xLarge)
-                    VStack(spacing: 4) {
-                        Text(user.fullname)
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                        
-                        Text("Messenger")
-                            .font(.footnote)
-                            .foregroundStyle(.gray)
-                    }
+//                    VStack(spacing: 4) {
+//                        Text(user.fullname)
+//                            .font(.title3)
+//                            .fontWeight(.semibold)
+//                            .padding(.vertical)
+//                    }
                 }
+                .padding(.vertical)
                 
-                
-                ForEach(viewModel.messages) { message in
-                    ChatMessageCell(message: message)
+                LazyVStack {
+                    ForEach(viewModel.messages) { message in
+                        ChatMessageCell(message: message)
+                    }
                 }
             }
             
             Spacer()
             ZStack(alignment: .trailing) {
-                TextField("Message", text: $viewModel.messageText, axis: .vertical)
+                TextField("Text here", text: $viewModel.messageText, axis: .vertical)
                     .padding(16)
                     .padding(.trailing, 48)
                     .background(Color(.secondarySystemBackground))
@@ -51,13 +50,21 @@ struct ChatView: View {
                     viewModel.sendMessage()
                     viewModel.messageText = ""
                 } label: {
-                    Text("Send")
-                        .fontWeight(.semibold)
+                    
+                    if viewModel.messageText == "" {
+                        Text("Send")
+                            .fontWeight(.semibold)
+                    } else {
+                        Image(systemName: "chevron.forward.2")
+                            .font(.title3)
+                    }
                 }
                 .padding()
             }
             .padding()
         }
+        .navigationTitle(user.fullname)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
