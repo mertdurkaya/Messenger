@@ -27,7 +27,7 @@ struct ChatMessageCell: View {
                     .frame(maxWidth: UIScreen.main.bounds.width / 1.5, alignment: .trailing)
             } else {
                 HStack(alignment: .bottom, spacing: 8) {
-                    CircularProfileImageView(user: User.MOCK_USER, size: .xxSmall)
+                    CircularProfileImageView(user: User.MOCK_USER, size: .xSmall)
                     
                     Text(message.messageText)
                         .font(.subheadline)

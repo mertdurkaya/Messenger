@@ -21,12 +21,6 @@ struct ChatView: View {
             ScrollView {
                 VStack {
                     CircularProfileImageView(user: user, size: .xLarge)
-//                    VStack(spacing: 4) {
-//                        Text(user.fullname)
-//                            .font(.title3)
-//                            .fontWeight(.semibold)
-//                            .padding(.vertical)
-//                    }
                 }
                 .padding(.vertical)
                 
@@ -47,13 +41,15 @@ struct ChatView: View {
                     .font(.subheadline)
                 
                 Button {
-                    viewModel.sendMessage()
-                    viewModel.messageText = ""
+                    withAnimation {
+                        viewModel.sendMessage()
+                        viewModel.messageText = ""
+                    }
                 } label: {
-                    
                     if viewModel.messageText == "" {
                         Text("Send")
                             .fontWeight(.semibold)
+                            .animation(.easeInOut, value: viewModel.messageText == "")
                     } else {
                         Image(systemName: "chevron.forward.2")
                             .font(.title3)

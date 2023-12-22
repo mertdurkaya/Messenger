@@ -16,18 +16,13 @@ struct NewMessageView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                TextField("To:", text: $searchText)
-                    .frame(height: 44)
-                    .padding(.leading)
-                    .background(Color(.systemGroupedBackground))
-                
                 Text("CONTACT")
                     .foregroundStyle(.gray)
                     .font(.footnote)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 
-                ForEach(viewModel.users) { user in
+                ForEach(viewModel.filteredUsers) { user in
                     VStack {
                         HStack {
                             CircularProfileImageView(user: user, size: .medium)
@@ -49,6 +44,7 @@ struct NewMessageView: View {
                     }
                 }
             }
+            .searchable(text: $viewModel.searchText)
             .navigationTitle("New Message")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
