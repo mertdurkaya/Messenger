@@ -9,7 +9,9 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
+    
     @StateObject var viewModel = ProfileViewModel()
+    @State private var showLogoutAlert = false
     let user: User
     
     var body: some View {
@@ -49,7 +51,7 @@ struct ProfileView: View {
                 
                 Section {
                     Button("Log Out") {
-                        AuthService.shared.signOut()
+                        showLogoutAlert.toggle()
                     }
                     
                     Button("Delete Account") {
@@ -58,6 +60,13 @@ struct ProfileView: View {
                 }
                 .foregroundStyle(.red)
             }
+        }
+        .alert(isPresented: $showLogoutAlert) {
+            Alert(title: Text("Log Out"), message: Text("Are you sure you want to log out?"), primaryButton: .destructive(Text("Log Out"), action: {
+                withAnimation(.easeOut) {
+                    AuthService.shared.signOut()
+                }
+            }), secondaryButton: .cancel())
         }
     }
 }
